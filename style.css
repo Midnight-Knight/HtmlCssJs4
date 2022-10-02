@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body 
+{
+    display: flex;
+    font-family: sans-serif;
+    background: #222831;
+    color: white;
+    flex-direction: column;
+}
+
+header,nav,section,.content-container,footer 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  
+/* ========== Menu ==========*/
+header 
+{
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 1em 8em;
+    background: #161a20;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+#logo 
+{
+    width: 50px;
+    transition: 0.3s;
+}
+
+#logo:hover 
+{
+    transform: scale(1.2);
+}
+
+nav 
+{
+    justify-content: space-between;
+    width: max-content;
+}
+
+nav a 
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    transition: 0.3s;  
+}
+  
+nav a:hover 
+{
+    border: 1px solid #f05454;
+}
+  
+  /* ========== Hero Section ==========*/
+section 
+{
+    display: flex;
+    width: 100%;
+}
+
+  /* ========== Footer ==========*/
+footer 
+{
+    background: #161a20;
+    padding: 3em;
+}
+
+.gradient-card
+{
+    border: 1px solid linear-gradient(45deg, red, orange);
+    padding: 40px 50px;
+    background: linear-gradient(45deg, red, orange);
+    color: white;
+    border-radius: 15px;
+}
+
+#section-1 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, rgb(0, 234, 255), rgb(68, 0, 255));
+    background: linear-gradient(45deg, rgb(0, 234, 255), rgb(68, 0, 255));
+    box-shadow: 0px -5px 10px 4px black;
+}
+
+#section-11 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, red, orange);
+    background: linear-gradient(45deg, red, orange);
+    box-shadow: 0px 5px 10px 4px black;
+}
+
+#section-2 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, rgb(255, 0, 230), rgb(93, 0, 255));
+    background: linear-gradient(45deg, rgb(255, 0, 230), rgb(93, 0, 255));
+    box-shadow: 0px 5px 10px 4px black;
+}
+
+#section-21 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, rgb(9, 255, 0), rgb(255, 230, 0));
+    background: linear-gradient(45deg, rgb(9, 255, 0), rgb(255, 230, 0));
+    box-shadow: 0px 5px 10px 4px black;
+}
+
+#section-3 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 0, 217));
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 0, 217));
+    box-shadow: 0px 5px 10px 4px black;
+}
+
+#section-311 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, rgb(0, 238, 255), rgb(255, 230, 0));
+    background: linear-gradient(45deg, rgb(0, 238, 255), rgb(255, 230, 0));
+    box-shadow: 0px 5px 10px 4px black;
+}
+
+
+#section-312 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, rgb(255, 0, 0), rgb(55, 0, 255));
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(55, 0, 255));
+    box-shadow: 0px 5px 10px 4px black;
+}
+
+#section-41 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, rgb(255, 255, 255), rgb(55, 0, 255));
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(55, 0, 255));
+    box-shadow: 0px 5px 10px 4px black;
+}
+
+#section-42 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, rgb(255, 0, 0), rgb(0, 0, 0));
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(0, 0, 0));
+    box-shadow: 0px 5px 10px 4px black;
+}
+
+#section-5 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, rgb(255, 255, 255), rgb(0,0,0));
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(0,0,0));
+    box-shadow: 0px 5px 10px 4px black;
+}
+
+#section-6 .gradient-card
+{
+    border: 1px solid linear-gradient(45deg, rgb(57, 73, 141), rgb(128, 55, 55));
+    background: linear-gradient(45deg, rgb(57, 73, 141), rgb(128, 55, 55));
+    box-shadow: 0px 5px 10px 4px black;
+}
+
+section
+{
+    display: flex;
+    height: 50vh;
+}
+
+#section-1
+{
+    flex-direction:row;
+    justify-content:flex-start;
+}
+
+#section-11
+{
+    flex-direction:row-reverse;
+    justify-content:flex-start;
+}
+
+#section-2
+{
+    flex-direction:row-reverse;
+    justify-content:center;
+}
+
+#section-21
+{
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+#section-3
+{
+    flex-direction:row;
+    justify-content:flex-start;
+    height: 70vh;
+}
+
+#section-31
+{
+    flex-direction:column;
+}
+
+#section-311
+{
+    flex-direction:row;
+    justify-content:flex-start;
+    height: 20vh;
+}
+
+#section-312
+{
+    flex-direction:row;
+    justify-content:flex-start;
+    height: 20vh;
+}
+
+#section-4
+{
+    flex-direction: row;
+    align-items: center;
+}
+
+#section-41
+{
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+#section-42
+{
+    flex-direction:column;
+    justify-content:center;
+}
+
+#section-5
+{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#section-51
+{
+    align-items: center;
+}
+
+#section-52
+{
+    align-items:flex-end;
+}
+
+#section-6
+{
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+#section-31:hover > #section-311
+{
+    transition: 2s;
+    transform: translate(0,-30vh);
+}
+
+#section-31:not(:hover) > #section-311
+{
+    transition: 2s 2s;
+}
+
+#section-31:hover > #section-312
+{
+    transform: rotate(90deg) translateX(40vh);
+    transition: 2s;
+}
+
+#section-31:hover > #section-312 .gradient-card
+{
+    
+    padding-top: 100%;
+    transition: 2s;
+}
+
+#section-31:not(:hover) > #section-312 .gradient-card
+{
+    transition: 2s 2s;
+}
+
+#section-31:not(:hover) > #section-312
+{
+    transition: 2s 2s;
+}
+
+
